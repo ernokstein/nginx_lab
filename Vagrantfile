@@ -3,7 +3,6 @@ Vagrant.configure("2") do |config|
   config.vm.define "web1" do |web1|
     #para importar este tipo de box, debemos correr -> vagrant box add nginx_lab package.box
     #el archivo pacakge.box no se encuentra en el repositorio porque es muy pesado
-    #luego correr -> vagrant init nginx_lab
     web1.vm.box = "nginx_lab"
     web1.vm.hostname = 'web1'
     web1.vm.network :private_network, ip: "192.168.1.100"
