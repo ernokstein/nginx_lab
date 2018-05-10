@@ -1,0 +1,4 @@
+# todos apuntan al revproxy
+192.168.12.110	www.web1.com
+192.168.12.110	www.web2.com
+192.168.12.110  www.revproxy.com
